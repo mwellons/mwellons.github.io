@@ -3,7 +3,7 @@
         "apps": [],
         "details": [
             {
-                "appID": "com.google.experimental0.dev.extension0",
+                "appID": ["com.google.experimental0.dev.extension0", "EQHXZ8M8AV.com.google.experimental0.dev.extension0"],
                 "components":  [
                     {                
                         "/": "/*",
