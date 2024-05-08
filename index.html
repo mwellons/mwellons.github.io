@@ -1,0 +1,58 @@
+<!-- <meta http-equiv="refresh" content="0; URL=paypaygaltesting://success" /> -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website</title>
+</head>
+<body>
+
+  <h1>Welcome to my website!</h1>
+  <p>This is a website for testing GAL iOS testing.</p>
+  <a href="https://kelvinc1024.github.io/redirect-testing-only?mode=developer">Finish flow with universal links</a>
+  <p></p>
+  <button id="universal_link_button"  >Finish flow with universal links</button>
+  <style>
+    #universal_link_button {
+      font-size: 18px; 
+      transition: background-color 0.3s, transform 0.3s; /* Add transitions */
+    }
+    
+    #universal_link_button:active { /* Styles for the clicked/active state */
+      background-color: darkblue;
+      transform: scale(0.95); /* Make the button slightly smaller */
+    }
+    </style>
+  <script>
+    function redirectToApp() {
+      const returnCode = "Successfully Linked!"
+      window.location.href = "/paypay-ios-gal-testing/success/return_to_app?code=" + returnCode;
+    }
+    document.getElementById('universal_link_button').addEventListener('click', redirectToApp);
+  </script>
+
+
+<p></p><p></p>
+
+<button id="custom_url_button">Finish flow with custom URL</button>
+<style>
+  #custom_url_button {
+    font-size: 18px; 
+    transition: background-color 0.3s, transform 0.3s; /* Add transitions */
+  }
+  
+  #custom_url_button:active { /* Styles for the clicked/active state */
+    background-color: darkblue;
+    transform: scale(0.95); /* Make the button slightly smaller */
+  }
+  </style>
+  <script>
+    function redirectToApp() {
+      const returnCode = "Successfully Linked!"
+      window.location.href = "paypaygaltesting://success?code=" + returnCode;
+    }
+    document.getElementById('custom_url_button').addEventListener('click', redirectToApp);
+  </script>
+</body>
+</html>
